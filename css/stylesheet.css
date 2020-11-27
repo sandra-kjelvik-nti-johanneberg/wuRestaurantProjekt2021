@@ -1,0 +1,70 @@
+.grid-container {
+    display: grid;
+    height:120vh;
+    grid-template-areas: 
+    'lo lo lo'
+    'me me me'
+    'in in in'
+    'bpr bpr bpr'
+    'bo bo bo'
+    ; 
+}
+
+.logga {
+    grid-area: lo;
+    background-color: lightcoral;
+}
+
+.meny_potapas_omoss {
+    grid-area: me;
+    background-color: lightgreen;
+}
+
+.info_potisretter {
+    grid-area: in;
+    background-color: lightseagreen;
+}
+
+.bilder_pa_retter {
+    grid-area: bpr;
+    display: grid;
+    grid-template-areas: 
+    'b1 b2 b3'
+    'b4 b5 b6';
+    background-color: lightslategrey;
+}
+
+.bild1 {
+    grid-area: b1;
+    background-color: mediumpurple;
+}
+
+.bild2 {
+    grid-area: b2;
+    background-color: midnightblue;
+}
+
+.bild3 {
+    grid-area: b3;
+    background-color: olivedrab;
+}
+
+.bild4 {
+    grid-area: b4;
+    background-color: orchid;
+}
+
+.bild5 {
+    grid-area: b5;
+    background-color: rebeccapurple;
+}
+
+.bild6 {
+    grid-area: b6;
+    background-color: seagreen;
+}
+
+.botten {
+    grid-area: bo;
+    background-color: springgreen;
+}
