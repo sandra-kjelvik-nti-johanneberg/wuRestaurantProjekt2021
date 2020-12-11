@@ -1,4 +1,5 @@
-.grid-container {
+Första Sidan
+.grid_container_Forsta_sida {
     display: grid;
     
     height:120vh;
@@ -8,8 +9,7 @@
     'me me me'
     'in in in'
     'bpr bpr bpr'
-    'bo bo bo'
-    ; 
+    'bo bo bo'; 
 }
 
 .logga {
@@ -69,4 +69,42 @@
 .botten {
     grid-area: bo;
     background-color: springgreen;
+}
+
+/*meny */
+
+.grid_container_meny {
+    display: grid;
+    grid-template-areas: 
+    'lo lo'
+    'me me'
+    'sn fo'
+    'hu hu'
+    'ef dr'
+    'bo bo';
+}
+
+.snacks {
+    grid-area: sn;
+    background-color: khaki;
+}
+
+.Forretter {
+    grid-area: fo;
+    background-color: lawngreen;
+}
+
+.Huvudretter {
+    grid-area: hu;
+    background-color: lightsalmon;
+}
+
+.Efterretter {
+    grid-area: ef;
+    background-color: lightsteelblue;
+}
+
+.Drycker{
+    grid-area: dr;
+    background-color: maroon;
 }
