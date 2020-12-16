@@ -1,30 +1,54 @@
-Första Sidan
-.grid_container_Forsta_sida {
-    display: grid;
-    
-    height:120vh;
+/*Alla sidor*/
 
-    grid-template-areas: 
-    'lo lo lo'
-    'me me me'
-    'in in in'
-    'bpr bpr bpr'
-    'bo bo bo'; 
+body {
+    margin: 0px;
 }
 
 .logga {
     grid-area: lo;
-    background-color: lightcoral;
+    margin: auto;
+}
+
+.potapas_logga {
+    width: 100%;
 }
 
 .meny_potapas_omoss {
     grid-area: me;
-    background-color: lightgreen;
+    text-align: center;
+    padding: 5vh;
+    font-size: 40px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.botten {
+    grid-area: bo;
+    padding: 0vh 10vh 10vh 10vh;
+}
+
+.shockstock {
+    text-align: right;
+}
+
+/*Första Sidan*/
+
+.grid_container_Forsta_sida {
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: 50vh 20vh 30vh 110vh 30vh;
+    grid-template-areas: 
+    'lo lo lo'
+    'me me me'
+    'ip ip ip'
+    'bpr bpr bpr'
+    'bo bo bo'; 
 }
 
 .info_potisretter {
-    grid-area: in;
-    background-color: lightseagreen;
+    grid-area: ip;
 }
 
 .bilder_pa_retter {
@@ -33,48 +57,56 @@ Första Sidan
     grid-template-areas: 
     'b1 b2 b3'
     'b4 b5 b6';
-    background-color: lightslategrey;
 }
 
 .bild1 {
     grid-area: b1;
-    background-color: mediumpurple;
+    padding: 0vh 4vh 0vh 8vh;
+    width: 55vh;
+    height: 55vh;
 }
 
 .bild2 {
     grid-area: b2;
-    background-color: midnightblue;
+    padding: 0vh 4vh 0vh 8vh;
+    width: 55vh;
+    height: 55vh;
 }
 
 .bild3 {
     grid-area: b3;
-    background-color: olivedrab;
+    padding: 0vh 4vh 0vh 8vh;
+    width: 55vh;
+    height: 55vh;
 }
 
 .bild4 {
     grid-area: b4;
-    background-color: orchid;
+    padding: 0vh 4vh 0vh 8vh;
+    width: 55vh;
+    height: 55vh;
 }
 
 .bild5 {
     grid-area: b5;
-    background-color: rebeccapurple;
+    padding: 0vh 4vh 0vh 8vh;
+    width: 55vh;
+    height: 55vh;
 }
 
 .bild6 {
     grid-area: b6;
-    background-color: seagreen;
-}
-
-.botten {
-    grid-area: bo;
-    background-color: springgreen;
+    padding: 0vh 4vh 0vh 8vh;
+    width: 55vh;
+    height: 55vh;
 }
 
 /*meny */
 
 .grid_container_meny {
     display: grid;
+    grid-template-columns: 50% 50% ;
+    grid-template-rows: 50vh 20vh 30vh 30vh 30vh 30vh;
     grid-template-areas: 
     'lo lo'
     'me me'
@@ -84,27 +116,55 @@ Första Sidan
     'bo bo';
 }
 
-.snacks {
+.Snacks {
     grid-area: sn;
-    background-color: khaki;
+    background-color: #f5c97e;
 }
 
 .Forretter {
     grid-area: fo;
-    background-color: lawngreen;
+    background-color: #e9b150;
 }
 
 .Huvudretter {
     grid-area: hu;
-    background-color: lightsalmon;
+    background-color: #e09c26;
 }
 
 .Efterretter {
     grid-area: ef;
-    background-color: lightsteelblue;
+    background-color:  #f5c97e;
 }
 
 .Drycker{
     grid-area: dr;
-    background-color: maroon;
+    background-color: #e9b150;
+}
+
+/* om oss sidan*/
+
+.grid_container_om_oss{
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: 50vh 20vh 50vh 30vh;
+    grid-template-areas: 
+    'lo lo lo'
+    'me me me'
+    'os10 osn osf'
+    'bo bo bo';
+}
+
+.om_oss_10 {
+    grid-area: os10;
+    background-color: #f5c97e;
+}
+
+.om_oss_nu  {
+    grid-area: osn;
+    background-color: #e9b150;
+}
+
+.om_oss_framtiden {
+    grid-area: osf;
+    background-color: #e09c26;
 }
